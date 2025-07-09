@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Star, Heart, Calendar, Camera, HandHeart, Phone } from 'lucide-react';
+import { Menu, X, Star, Calendar, Camera, HandHeart, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Navigation = () => {
@@ -27,9 +27,13 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 group">
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center group-hover:animate-glow transition-all">
-              <Heart className="w-6 h-6 text-primary-foreground" fill="currentColor" />
+          <Link to="/" className="flex items-center space-x-3 group">
+            <div className="w-12 h-12 rounded-full overflow-hidden group-hover:animate-glow transition-all">
+              <img
+                src="/lovable-uploads/66b7a7c3-b316-4dfc-b9da-8612fb97e319.png"
+                alt="Daily Mandir Logo"
+                className="w-full h-full object-cover"
+              />
             </div>
             <span className="text-2xl font-playfair font-bold text-primary">Daily Mandir</span>
           </Link>
