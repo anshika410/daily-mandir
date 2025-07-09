@@ -38,14 +38,6 @@ const DailyDarshan = () => {
                 </div>
               </div>
             </Card>
-            
-            {/* Floating decorative elements */}
-            <div className="absolute -top-2 -right-2 animate-float">
-              <Sparkles className="w-8 h-8 text-secondary" />
-            </div>
-            <div className="absolute -bottom-2 -left-2 animate-float" style={{ animationDelay: '1.5s' }}>
-              <Heart className="w-6 h-6 text-accent" fill="currentColor" />
-            </div>
           </div>
 
           {/* Darshan Info */}

@@ -15,14 +15,6 @@ const HeroSection = () => {
         />
       </div>
 
-      {/* Floating Elements */}
-      <div className="absolute top-20 right-20 animate-float">
-        <Sparkles className="w-8 h-8 text-secondary opacity-60" />
-      </div>
-      <div className="absolute bottom-32 left-16 animate-float" style={{ animationDelay: '1s' }}>
-        <Sparkles className="w-6 h-6 text-accent opacity-40" />
-      </div>
-
       <div className="relative z-10 text-center max-w-6xl mx-auto px-4">
         {/* Main Heading */}
         <div className="animate-fade-in-up">

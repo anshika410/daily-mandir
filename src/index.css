@@ -96,6 +96,7 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground font-inter;
+    padding-top: 80px; /* Add padding to account for fixed header */
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -103,21 +104,16 @@ All colors MUST be HSL.
   }
 }
 
-/* Custom animations */
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+/* Smooth scrolling for better UX */
+html {
+  scroll-behavior: smooth;
 }
 
-@keyframes glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(255, 153, 51, 0.3); }
-  50% { box-shadow: 0 0 30px rgba(255, 153, 51, 0.5); }
-}
-
+/* Stable animations that don't interfere with scroll */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -125,16 +121,17 @@ All colors MUST be HSL.
   }
 }
 
-.animate-float {
-  animation: float 3s ease-in-out infinite;
-}
-
-.animate-glow {
-  animation: glow 2s ease-in-out infinite;
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(255, 153, 51, 0.3); }
+  50% { box-shadow: 0 0 30px rgba(255, 153, 51, 0.5); }
 }
 
 .animate-fade-in-up {
   animation: fadeInUp 0.8s ease-out;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
 }
 
 /* Sacred background patterns */
