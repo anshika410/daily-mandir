@@ -22,8 +22,8 @@ const DailyDarshan = () => {
             <Card className="overflow-hidden border-2 border-primary/20 shadow-2xl">
               <div className="relative">
                 <img
-                  src="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                  alt="Temple Deity - Daily Darshan"
+                  src="/lovable-uploads/6d6d47ad-fd7b-41b1-97bf-0a755e3e5606.png"
+                  alt="Shri Ganesha - Daily Darshan"
                   className="w-full h-96 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />

@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Star, Calendar, Camera, HandHeart, Phone } from 'lucide-react';
+import { Menu, X, Star, Calendar, Camera, HandHeart, UserPlus } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Navigation = () => {
@@ -14,8 +14,7 @@ const Navigation = () => {
     { name: 'Pooja Services', path: '/services', icon: Star },
     { name: 'Events', path: '/events', icon: Calendar },
     { name: 'Gallery', path: '/gallery', icon: Camera },
-    { name: 'Donations', path: '/donations', icon: HandHeart },
-    { name: 'Contact', path: '/contact', icon: Phone },
+    { name: 'Gau Seva', path: '/donations', icon: HandHeart },
   ];
 
   const isActivePath = (path: string) => {
@@ -28,11 +27,11 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-4 group">
-            <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-secondary group-hover:border-accent transition-colors duration-300 shadow-md">
+            <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-secondary group-hover:border-accent transition-colors duration-300 shadow-md bg-white/10 backdrop-blur">
               <img
                 src="/lovable-uploads/66b7a7c3-b316-4dfc-b9da-8612fb97e319.png"
                 alt="Daily Mandir Logo"
-                className="w-full h-full object-contain bg-white p-1"
+                className="w-full h-full object-contain p-1"
               />
             </div>
             <span className="text-3xl font-playfair font-bold text-white drop-shadow-md">Daily Mandir</span>
@@ -54,6 +53,16 @@ const Navigation = () => {
                 <span>{item.name}</span>
               </Link>
             ))}
+            
+            {/* Login/Register Button */}
+            <Button 
+              size="sm" 
+              variant="outline" 
+              className="ml-4 border-white text-white hover:bg-white hover:text-primary transition-colors"
+            >
+              <UserPlus className="w-4 h-4 mr-2" />
+              Login/Register
+            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -88,6 +97,16 @@ const Navigation = () => {
                   <span>{item.name}</span>
                 </Link>
               ))}
+              
+              {/* Mobile Login/Register */}
+              <Button 
+                size="sm" 
+                className="w-full mt-4 bg-primary hover:bg-primary/90"
+                onClick={() => setIsOpen(false)}
+              >
+                <UserPlus className="w-4 h-4 mr-2" />
+                Login/Register
+              </Button>
             </div>
           </div>
         )}

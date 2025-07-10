@@ -30,8 +30,8 @@ const Index = () => {
       color: 'from-accent/20 to-accent/10'
     },
     {
-      title: 'Make Donation',
-      description: 'Contribute to dharmic activities',
+      title: 'Gau Seva',
+      description: 'Contribute to dharmic activities and cow protection',
       icon: HandHeart,
       link: '/donations',
       color: 'from-primary/15 to-secondary/10'
@@ -143,10 +143,10 @@ const Index = () => {
             Our temple priests and staff are here to help you on your spiritual journey.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact">
+            <Link to="/donations">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8">
-                <Phone className="w-5 h-5 mr-2" />
-                Contact Temple
+                <HandHeart className="w-5 h-5 mr-2" />
+                Gau Seva
               </Button>
             </Link>
             <Link to="/about">
