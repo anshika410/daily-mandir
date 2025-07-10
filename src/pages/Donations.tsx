@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -42,7 +43,7 @@ const Donations = () => {
             alt="Gau Seva Background"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-primary/80"></div>
+          <div className="absolute inset-0 bg-black/30"></div>
         </div>
         
         {/* Content */}
