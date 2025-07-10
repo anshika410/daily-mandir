@@ -16,7 +16,7 @@ const Gallery = () => {
       title: 'Morning Aarti Ceremony',
       category: 'Daily Rituals',
       type: 'image',
-      image: 'https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: '/lovable-uploads/1ecef2f8-6ce7-4547-839e-3b87561aa201.png',
       description: 'Peaceful morning prayers with devotees'
     },
     {
@@ -24,7 +24,7 @@ const Gallery = () => {
       title: 'Ganesh Chaturthi Celebration',
       category: 'Festivals',
       type: 'image',
-      image: 'https://images.unsplash.com/photo-1466442929976-97f336a657be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: '/lovable-uploads/bbe36438-e0dc-475a-86e6-1f2604c9e4bc.png',
       description: 'Grand celebration with eco-friendly decorations'
     },
     {
@@ -32,7 +32,7 @@ const Gallery = () => {
       title: 'Temple Architecture',
       category: 'Architecture',
       type: 'image',
-      image: 'https://images.unsplash.com/photo-1473177104440-ffee2f376098?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: '/lovable-uploads/fca6fec7-d355-4349-87e2-cdc3ebdd5b31.png',
       description: 'Intricate stone carvings and traditional design'
     },
     {
@@ -40,7 +40,7 @@ const Gallery = () => {
       title: 'Community Feast',
       category: 'Community',
       type: 'image',
-      image: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: '/lovable-uploads/827caa7a-4ec3-4cae-b75e-07495eb59c2e.png',
       description: 'Devotees sharing blessed food together'
     },
     {
@@ -48,7 +48,7 @@ const Gallery = () => {
       title: 'Evening Aarti',
       category: 'Daily Rituals',
       type: 'video',
-      image: 'https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: '/lovable-uploads/84e39c32-d10c-4d52-9266-43add5db3490.png',
       description: 'Live evening prayers and hymns'
     },
     {
@@ -56,7 +56,7 @@ const Gallery = () => {
       title: 'Diwali Celebrations',
       category: 'Festivals',
       type: 'image',
-      image: 'https://images.unsplash.com/photo-1466442929976-97f336a657be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: '/lovable-uploads/e4602239-9b7d-46ac-bf0d-13be3c968394.png',
       description: 'Temple illuminated with thousands of diyas'
     },
     {
@@ -64,7 +64,7 @@ const Gallery = () => {
       title: 'Sacred Pillars',
       category: 'Architecture',
       type: 'image',
-      image: 'https://images.unsplash.com/photo-1473177104440-ffee2f376098?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: '/lovable-uploads/cd0f71fd-fdde-42a1-8c57-4469b6254f83.png',
       description: 'Hand-carved pillars with divine motifs'
     },
     {
@@ -72,7 +72,7 @@ const Gallery = () => {
       title: 'Children\'s Program',
       category: 'Community',
       type: 'image',
-      image: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: '/lovable-uploads/5eff0354-08f5-4e31-986a-23268266c542.png',
       description: 'Young devotees learning traditional values'
     }
   ];
@@ -194,11 +194,11 @@ const Gallery = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
             <Card className="group hover:shadow-2xl transition-all duration-300 border-primary/20 hover:border-primary/40 bg-gradient-to-br from-card to-primary/5 animate-fade-in overflow-hidden">
               <div className="relative">
                 <img
-                  src="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="/lovable-uploads/53f470a9-fb29-401e-8980-4d79c47b107b.png"
                   alt="Annual Mahotsav"
                   className="w-full h-64 object-cover"
                 />
@@ -207,46 +207,18 @@ const Gallery = () => {
                   <h3 className="text-2xl font-playfair font-bold mb-1">Annual Mahotsav 2024</h3>
                   <div className="flex items-center text-sm">
                     <Calendar className="w-4 h-4 mr-1" />
-                    <span>August 15-17, 2024</span>
+                    <span>October 15-17, 2024</span>
                   </div>
                 </div>
               </div>
               <CardContent className="p-6">
                 <p className="text-muted-foreground mb-4">
                   A three-day spiritual extravaganza featuring traditional music, dance, 
-                  and continuous devotional programs.
+                  and continuous devotional programs with elaborate decorations and community participation.
                 </p>
                 <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
                   <Heart className="w-4 h-4 mr-2" />
                   View Full Album
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="group hover:shadow-2xl transition-all duration-300 border-primary/20 hover:border-primary/40 bg-gradient-to-br from-card to-secondary/5 animate-fade-in overflow-hidden" style={{ animationDelay: '0.2s' }}>
-              <div className="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Temple Renovation"
-                  className="w-full h-64 object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-2xl font-playfair font-bold mb-1">Temple Renovation</h3>
-                  <div className="flex items-center text-sm">
-                    <Calendar className="w-4 h-4 mr-1" />
-                    <span>Completed 2023</span>
-                  </div>
-                </div>
-              </div>
-              <CardContent className="p-6">
-                <p className="text-muted-foreground mb-4">
-                  Restoration of ancient carvings and addition of modern amenities 
-                  while preserving traditional architecture.
-                </p>
-                <Button variant="outline" className="border-primary/30 text-primary hover:bg-primary/10">
-                  <Camera className="w-4 h-4 mr-2" />
-                  Before & After
                 </Button>
               </CardContent>
             </Card>

@@ -27,11 +27,11 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-4 group">
-            <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-secondary group-hover:border-accent transition-colors duration-300 shadow-md bg-white/10 backdrop-blur">
+            <div className="w-16 h-16 rounded-full overflow-hidden border-3 border-secondary group-hover:border-accent transition-colors duration-300 shadow-lg bg-white flex items-center justify-center p-1">
               <img
                 src="/lovable-uploads/66b7a7c3-b316-4dfc-b9da-8612fb97e319.png"
                 alt="Daily Mandir Logo"
-                className="w-full h-full object-contain p-1"
+                className="w-full h-full object-contain rounded-full"
               />
             </div>
             <span className="text-3xl font-playfair font-bold text-white drop-shadow-md">Daily Mandir</span>
