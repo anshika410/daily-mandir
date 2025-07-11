@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -43,16 +42,15 @@ const Donations = () => {
             alt="Gau Seva Background"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/30"></div>
         </div>
         
         {/* Content */}
         <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
           <div className="animate-fade-in-up">
-            <h1 className="text-5xl md:text-6xl font-playfair font-bold text-white mb-6">
+            <h1 className="text-5xl md:text-6xl font-playfair font-bold text-white mb-6 drop-shadow-lg">
               Gau Seva - Sacred Donations
             </h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed drop-shadow-md">
               Support our temple's divine mission and contribute to the spiritual welfare of our community. 
               Every contribution, big or small, helps us serve the divine and our devotees.
             </p>
